@@ -14,6 +14,7 @@ services:
       api_port: 2333
       downWithPanel: 1
       TZ: "Asia/Shanghai"
+      log-driver: json-file
     volumes:
       - /etc/localtime:/etc/localtime:ro
     logging:
