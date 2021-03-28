@@ -6,7 +6,6 @@ services:
     restart: always
     network_mode: "host"
     environment:
-      log-driver: json-file
       sspanel_url: "https://xxxx"
       key: "xxxx"
       docker: "true"
@@ -19,6 +18,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
     logging:
       options:
+        log-driver: json-file
         max-size: "10m"
         max-file: "3"
 
