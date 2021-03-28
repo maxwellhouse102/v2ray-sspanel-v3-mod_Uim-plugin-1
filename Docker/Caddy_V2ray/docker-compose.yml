@@ -5,8 +5,8 @@ services:
     image: ephz3nt/v2ray_v3:go
     restart: always
     network_mode: "host"
-    log-driver: json-file
     environment:
+      log-driver: json-file
       sspanel_url: "https://xxxx"
       key: "xxxx"
       docker: "true"
