@@ -5,6 +5,7 @@ services:
     image: ephz3nt/v2ray_v3:go
     restart: always
     network_mode: "host"
+    log-driver: json-file
     environment:
       sspanel_url: "https://xxxx"
       key: "xxxx"
@@ -14,7 +15,6 @@ services:
       api_port: 2333
       downWithPanel: 1
       TZ: "Asia/Shanghai"
-      log-driver: json-file
     volumes:
       - /etc/localtime:/etc/localtime:ro
     logging:
