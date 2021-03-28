@@ -18,7 +18,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     logging:
       options:
-        log-driver: "json-file"
         max-size: "10m"
         max-file: "3"
 
